@@ -1,24 +1,15 @@
+// src/App.tsx
+
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SourcingProductDetail from './components/SourcingProductDetail';
 
 function App() {
+  console.log('App rendered'); // App 컴포넌트 리렌더링 확인 로그
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // SettingsProvider로 애플리케이션의 일부 또는 전체를 감싸서 설정 Context를 제공
+    <div>
+      <SourcingProductDetail productId='2' />
     </div>
   );
 }
